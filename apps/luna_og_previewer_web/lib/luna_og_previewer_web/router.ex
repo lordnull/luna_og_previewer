@@ -21,9 +21,12 @@ defmodule LunaOgPreviewerWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", LunaOgPreviewerWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", LunaOgPreviewerWeb do
+    pipe_through :api
+
+    resources "/urls", UrlController, only: [:show, :update, :delete]
+  end
+
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
   if Application.compile_env(:luna_og_previewer_web, :dev_routes) do
