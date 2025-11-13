@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      - SECRET_KEY_BASE=ogSffCDWZRyF27DSQmNdF3+Ms+hKtSdI47NA7MZzJIoJkmihFbCtWwY2qaQEzZLk
+      - PHX_HOST=localhost

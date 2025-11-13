@@ -35,3 +35,5 @@ luna_og_previewer-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore the release build
+/rel/
