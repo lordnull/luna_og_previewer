@@ -1,3 +1,0 @@
-# LunaOgPreviewer
-
-**TODO: Add description**

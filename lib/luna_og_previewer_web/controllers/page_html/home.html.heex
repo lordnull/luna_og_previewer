@@ -1,0 +1,20 @@
+<Layouts.flash_group flash={@flash} />
+<div>
+<.form
+  for={@url_fetch_form}
+  id="url-fetch-form"
+  phx-submit="fetch_url"
+>
+
+  <.input
+    field={@url_fetch_form[:url]}
+    name="url"
+    value={@url_fetch_form[:url]}
+    label="URL to scan"
+  />
+
+  <.button type="submit" >Fetch</.button>
+
+</.form>
+
+</div>
